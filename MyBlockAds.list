@@ -1,4 +1,4 @@
-# 2023-08-28 13:35
+# 2023-08-31 23:45
 
 # ======= A ======= #
 # 阿里云
@@ -36,10 +36,6 @@ HOST, mall.bilibili.com, REJECT
 HOST, passport.bilibili.com, REJECT
 
 # ======= C ======= #
-# 菜鸟
-HOST, iyes.youku.com, REJECT
-HOST, vali.cp31.ott.cibntv.net, REJECT
-IP-CIDR, 117.161.156.227/32, REJECT
 # 彩云天气
 HOST, ad.cyapi.cn, REJECT
 # 昌原云充
@@ -80,6 +76,7 @@ HOST, open.e.kuaishou.com, REJECT
 HOST-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
 HOST-SUFFIX, pangolin-sdk-toutiao.com, REJECT
 HOST-SUFFIX, pangolin-sdk-toutiao1.com, REJECT
+HOST-SUFFIX, pangolin.snssdk.com, REJECT
 
 # ======= H ======= #
 # 海尔智家
@@ -99,6 +96,18 @@ HOST, tmeadcomm.y.qq.com, REJECT
 HOST, statics.woozooo.com, REJECT
 
 # ======= M ======= #
+# 芒果TV
+HOST, dflow.bz.mgtv.com, REJECT
+HOST, encounter.bz.mgtv.com, REJECT
+HOST, floor.bz.mgtv.com, REJECT
+HOST, img.da.mgtv.com, REJECT
+HOST, layer.bz.mgtv.com, REJECT
+HOST, mob.bz.mgtv.com, REJECT
+HOST, mobile.da.mgtv.com, REJECT
+HOST, v2.da.mgtv.com, REJECT
+HOST, video.da.mgtv.com, REJECT
+HOST, vip.bz.mgtv.com, REJECT
+HOST, ys.da.mgtv.com, REJECT
 # 美团
 HOST, al-log.d.meituan.net, REJECT
 HOST, babel-statistics-android.d.meituan.net, REJECT
@@ -166,8 +175,17 @@ HOST, sdkconfig.ad.xiaomi.com, REJECT
 ;HOST, hub5idx.v6.shub.sandai.net, REJECT
 
 # ======= Y ======= #
-# 优酷
+# 优酷 & 菜鸟
+HOST, adsmind.ugdtimg.com, REJECT
 HOST, amdc.m.youku.com, REJECT
+HOST, apiv4-iyes.youku.com, REJECT
+HOST, httpdns.alicdn.com, REJECT
+HOST, huichuan-mc.sm.cn, REJECT
+HOST, huichuan.sm.cn, REJECT
+HOST, iyes.youku.com, REJECT
+HOST, vali-ugc.cp31.ott.cibntv.net, REJECT
+HOST, vali.cp31.ott.cibntv.net, REJECT
+HOST, valipl.cp31.ott.cibntv.net, REJECT
 HOST, yk-ssp.ad.youku.com, REJECT
 HOST, ykad-data.youku.com, REJECT
 # 云闪付 开屏广告
