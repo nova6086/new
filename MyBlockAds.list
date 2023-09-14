@@ -1,4 +1,4 @@
-# 2023-09-11 09:15
+# 2023-09-12 16:25
 
 # ======= A ======= #
 # 阿里云
@@ -51,8 +51,6 @@ HOST, mapi.apptimize.com, REJECT
 HOST, md-i-s.apptimize.com, REJECT
 
 # ======= F ======= #
-# Flurry
-HOST, data.flurry.com, REJECT
 # Foreca & Google
 HOST, adservice.google.com, REJECT
 HOST, googleads.g.doubleclick-cn.net, REJECT
