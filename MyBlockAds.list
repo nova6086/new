@@ -1,4 +1,4 @@
-# 2023-09-12 16:25
+# 2023-09-15 10:45
 
 # ======= A ======= #
 # 阿里云
@@ -6,7 +6,22 @@ IP-CIDR, 203.107.1.1/24, REJECT
 # 爱奇艺
 HOST, api.iqiyi.com, REJECT
 # Apple
+HOST, advertising.apple.com, REJECT
 HOST, api-adservices.apple.com, REJECT
+HOST, apple.comscoreresearch.com, REJECT
+HOST, banners.itunes.apple.com, REJECT
+HOST, iad.apple.com, REJECT
+HOST, iadcontent.apple.com, REJECT
+HOST, iadctest.qwapi.com, REJECT
+HOST, iadmoo.apple.com, REJECT
+HOST, iadworkbench.apple.com, REJECT
+HOST, launch.apple.com, REJECT
+HOST, metrics.apple.com, REJECT
+HOST, qwapi.apple.com, REJECT
+HOST, securemetrics.apple.com, REJECT
+HOST, webproxy-advp.iad-apple.com, REJECT
+HOST, webproxy-advp.iad-apple.com.akadns.net, REJECT
+HOST-SUFFIX, advp.apple.com, REJECT
 HOST-SUFFIX, iadsdk.apple.com, REJECT
 # 安全浏览限制解除
 HOST, lookup.api.bsb.baidu.com, REJECT
@@ -139,14 +154,18 @@ HOST-SUFFIX, shuzilm.cn, REJECT
 # 腾讯 无法使用的推送服务
 HOST, tpns.qq.com, REJECT
 # 腾讯视频
+HOST, access1.tpns.tencent.com, REJECT
 HOST, adsmind.gdtimg.com, REJECT
+HOST, api.poll.video.qq.com, REJECT
 HOST, btrace.qq.com, REJECT
+HOST, guid.tpns.tencent.com, REJECT
+HOST, h.trace.qq.com, REJECT
 HOST, info4.video.qq.com, REJECT
 HOST, info6.video.qq.com, REJECT
 HOST, ios.video.mpush.qq.com, REJECT
 HOST, mtrace.qq.com, REJECT
 HOST, pgdt.gtimg.cn, REJECT
-HOST, vv.video.qq.com, REJECT
+HOST, stat.tpns.tencent.com, REJECT
 
 # ======= W ======= #
 # 网上国网
