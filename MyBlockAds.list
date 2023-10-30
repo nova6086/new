@@ -85,7 +85,7 @@ HOST, free-aos-cdn-image.amap.com, REJECT
 HOST, oisc.icbc.com.cn, REJECT
 HOST, pageviewp.icbc.com.cn, REJECT
 # 广告联盟
-HOST, is.snssdk.com, REJECT
+# HOST, is.snssdk.com, REJECT
 HOST, mi.gdt.qq.com, REJECT
 HOST, open.e.kuaishou.com, REJECT
 HOST-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
