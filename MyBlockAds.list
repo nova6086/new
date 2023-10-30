@@ -1,4 +1,4 @@
-# 2023-10-26 00:30
+# 2023-10-29 08:00
 
 # ======= A ======= #
 # 阿里云盘
@@ -85,7 +85,7 @@ HOST, free-aos-cdn-image.amap.com, REJECT
 HOST, oisc.icbc.com.cn, REJECT
 HOST, pageviewp.icbc.com.cn, REJECT
 # 广告联盟
-# HOST, is.snssdk.com, REJECT
+HOST, is.snssdk.com, REJECT
 HOST, mi.gdt.qq.com, REJECT
 HOST, open.e.kuaishou.com, REJECT
 HOST-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
@@ -101,6 +101,10 @@ HOST-SUFFIX, ehaier.com, REJECT
 # 建设银行
 HOST, adv.ccb.com, REJECT
 HOST, imageadv.ccb.com, REJECT
+# 京东
+HOST, dns.jd.com, REJECT
+IP-CIDR, 101.124.19.122/32, REJECT
+IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
 
 # ======= K ======= #
 # 酷我音乐
