@@ -52,8 +52,8 @@ HOST, lc.map.baidu.com, REJECT
 # 百度贴吧
 IP-CIDR, 180.76.76.200/32, REJECT
 # 哔哩哔哩
-HOST, mall.bilibili.com, REJECT
-HOST, passport.bilibili.com, REJECT
+# HOST, mall.bilibili.com, REJECT
+# HOST, passport.bilibili.com, REJECT
 
 # ======= C ======= #
 # 彩云天气
