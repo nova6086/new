@@ -107,9 +107,9 @@ HOST-SUFFIX, ehaier.com, REJECT
 HOST, adv.ccb.com, REJECT
 HOST, imageadv.ccb.com, REJECT
 # 京东
-HOST, dns.jd.com, REJECT
-IP-CIDR, 101.124.19.122/32, REJECT
-IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
+# HOST, dns.jd.com, REJECT
+# IP-CIDR, 101.124.19.122/32, REJECT
+# IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
 
 # ======= K ======= #
 # 酷我音乐
