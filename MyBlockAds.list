@@ -40,7 +40,8 @@ HOST, afdconf.baidu.com, REJECT
 HOST, lc.map.baidu.com, REJECT
 # 百度贴吧
 IP-CIDR, 180.76.76.200/32, REJECT
-
+# 哔哩哔哩
+HOST, mall.bilibili.com, REJECT
 # ======= C ======= #
 # 彩云天气
 HOST, ad.cyapi.cn, REJECT
