@@ -1,4 +1,4 @@
-# 2023-12-01 22:25
+# 2023-12-05 13:05
 
 # ======= A ======= #
 # 阿里巴巴
@@ -40,8 +40,7 @@ HOST, afdconf.baidu.com, REJECT
 HOST, lc.map.baidu.com, REJECT
 # 百度贴吧
 IP-CIDR, 180.76.76.200/32, REJECT
-# 哔哩哔哩
-HOST, mall.bilibili.com, REJECT
+
 # ======= C ======= #
 # 彩云天气
 HOST, ad.cyapi.cn, REJECT
@@ -194,6 +193,7 @@ HOST, amdc.m.youku.com, REJECT
 HOST, api.sm.cn, REJECT
 HOST, apiv4-iyes.youku.com, REJECT
 HOST, baichuan-sdk.alicdn.com, REJECT
+HOST, cad.youku.com, REJECT
 HOST, huichuan-mc.sm.cn, REJECT
 HOST, huichuan.sm.cn, REJECT
 HOST, iyes.youku.com, REJECT
