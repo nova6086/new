@@ -43,6 +43,7 @@ IP-CIDR, 180.76.76.200/32, REJECT
 
 # 哔哩哔哩
 HOST, mall.bilibili.com, REJECT
+HOST, passport.bilibili.com, REJECT
 
 # ======= C ======= #
 # 彩云天气
