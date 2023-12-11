@@ -1,4 +1,4 @@
-# 2023-12-05 13:05
+# 2023-12-09 15:40
 
 # ======= A ======= #
 # 阿里巴巴
@@ -24,7 +24,7 @@ HOST, launch.apple.com, REJECT
 HOST, qwapi.apple.com, REJECT
 HOST-SUFFIX, advp.apple.com, REJECT
 HOST-SUFFIX, iad-apple.com, REJECT
-# HOST-SUFFIX, iadsdk.apple.com, REJECT
+HOST-SUFFIX, iadsdk.apple.com, REJECT
 # 安全浏览限制解除
 HOST, lookup.api.bsb.baidu.com, REJECT
 HOST-SUFFIX, u3.ucweb.com, REJECT
@@ -90,6 +90,7 @@ HOST-KEYWORD, video-cn.snssdk.com, REJECT
 # 海尔智家
 HOST-SUFFIX, ehaier.com, REJECT
 # httpdns
+HOST, hdns.ksyun.com, REJECT
 HOST-KEYWORD, httpdns., REJECT
 HOST-KEYWORD, httpdns-, REJECT
 
@@ -100,6 +101,8 @@ HOST-KEYWORD, adv.ccb.com, REJECT
 HOST, dns.jd.com, REJECT
 IP-CIDR, 101.124.19.122/32, REJECT
 IP6-CIDR, 2402:db40:5100:1011::5/128, REJECT
+# JavDB
+HOST, api.liquidlink.cn, REJECT
 
 # ======= K ======= #
 # 酷我音乐
@@ -134,6 +137,7 @@ HOST, al-log.d.meituan.net, REJECT
 HOST, babel-statistics-android.d.meituan.net, REJECT
 HOST, maplocatesdksnapshot.d.meituan.net, REJECT
 HOST, metrics-picture.d.meituan.net, REJECT
+HOST, open.kuaishouzt.com, REJECT
 HOST, route-stats.d.meituan.net, REJECT
 # 美颜相机
 HOST, aaid.uyunad.com, REJECT
@@ -163,11 +167,11 @@ HOST, otheve.beacon.qq.com, REJECT
 HOST, pgdt.gtimg.cn, REJECT
 HOST, tpns.qq.com, REJECT
 ;HOST, vv.video.qq.com, REJECT
-HOST, vv6.video.qq.com, REJECT
 HOST-SUFFIX, gdt.qq.com, REJECT
 HOST-SUFFIX, l.qq.com, REJECT
 HOST-KEYWORD, trace.qq.com, REJECT
 HOST-KEYWORD, trace.video.qq.com, REJECT
+HOST-KEYWORD, vv6.video.qq.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT
 
 # ======= W ======= #
