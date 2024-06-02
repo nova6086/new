@@ -217,6 +217,11 @@ HOST, sdkconfig.ad.xiaomi.com, REJECT
 ;HOST, hub5idx.v6.shub.sandai.net, REJECT
 
 # ======= Y ======= #
+# 移花宫
+HOST, tong.8888888888.bid, REJECT
+HOST-KEYWORD, kc.saigmpl.com, REJECT
+HOST-KEYWORD, kcc.fwxhvvd.com, REJECT
+HOST-KEYWORD, kg.oiocklg.com, REJECT
 # 优酷 & 菜鸟
 ;HOST, acs.youku.com, REJECT
 HOST, acs4baichuan.m.taobao.com, REJECT
