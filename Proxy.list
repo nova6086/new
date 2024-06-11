@@ -9,3 +9,9 @@ HOST-SUFFIX, sehuatang.org, PROXY
 HOST-SUFFIX, hotgirl.biz, PROXY
 HOST-SUFFIX, theporndude.com, PROXY
 HOST-SUFFIX, github.com, PROXY
+HOST-KEYWORD, mypikpak.com, PROXY
+
+HOST, is.snssdk.com, DIRECT
+# 哔哩哔哩
+HOST, mall.bilibili.com, REJECT
+HOST, passport.bilibili.com, REJECT
