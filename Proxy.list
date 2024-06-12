@@ -13,5 +13,5 @@ HOST-KEYWORD, mypikpak.com, PROXY
 
 # HOST, is.snssdk.com, DIRECT
 # 哔哩哔哩
-HOST, mall.bilibili.com, REJECT
-HOST, passport.bilibili.com, REJECT
+# HOST, mall.bilibili.com, REJECT
+# HOST, passport.bilibili.com, REJECT
