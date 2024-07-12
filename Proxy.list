@@ -12,6 +12,7 @@ HOST-SUFFIX, github.com, PROXY
 HOST-KEYWORD, mypikpak.com, PROXY
 HOST-SUFFIX, s.youtube.com, PROXY
 HOST-SUFFIX, i.ytimg.com, PROXY
+HOST-SUFFIX, www.jpxgmn.com, PROXY
 # HOST-SUFFIX, yt3.ggpht.com, PROXY
 
 # HOST, is.snssdk.com, DIRECT
