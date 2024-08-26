@@ -16,6 +16,7 @@ HOST-SUFFIX, www.jpxgmn.com, PROXY
 HOST-KEYWORD, twitter.com, PROXY
 HOST-SUFFIX, pbs.twimg.com, PROXY
 # HOST-SUFFIX, yt3.ggpht.com, PROXY
+HOST-SUFFIX, is.gd, PROXY
 
 # HOST, is.snssdk.com, DIRECT
 # 哔哩哔哩
