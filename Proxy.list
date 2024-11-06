@@ -18,6 +18,7 @@ HOST-SUFFIX, pbs.twimg.com, PROXY
 # HOST-SUFFIX, yt3.ggpht.com, PROXY
 HOST-SUFFIX, is.gd, PROXY
 HOST-KEYWORD, happymh.com, PROXY
+HOST-SUFFIX, portx.cc, PROXY
 
 # HOST, is.snssdk.com, DIRECT
 # 哔哩哔哩
