@@ -19,7 +19,7 @@ if (url.includes("x/v2/splash")) {
   // 首页推荐信息流
   if (obj?.data?.items?.length > 0) {
     // 白名单，并且过滤竖频
-    obj.data.items = obj.data.items.filter((i) => i?.card_goto === "av" && i?.goto !== "vertical_av");
+    obj.data.items = obj.data.items.filter((i) => i?.card_goto === "av");
   }
   if (obj?.data?.config?.toast?.has_toast) {
     obj.data.config.toast.has_toast = false;
@@ -34,7 +34,7 @@ if (url.includes("x/v2/splash")) {
   }
   // 首页导航栏
   if (obj?.data?.tab?.length > 0) {
-    const sortLists = ["推荐", "热门"];
+    const sortLists = ["直播","推荐","热门"];
     obj.data.tab = obj.data.tab
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
