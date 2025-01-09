@@ -1,9 +1,11 @@
-#!name = IT之家
-#!desc = 移除首页广告
-#!author = RuCu6 Keywos
-#!update = 2023-08-21 10:25
+#!name = IT之家去广告
+#!desc = @keywos
 
-# 首页,轮播图,置顶文章,信息流广告
-^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds) url script-response-body https://raw.githubusercontent.com/nova6086/new/refs/heads/main/ithome.js
+#[rewrite_local]
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao url reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ url reject
 
-hostname = napi.ithome.com
+^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds\?) url script-response-body https://raw.githubusercontent.com/Keywos/rule/main/JS/surgeithome.js
+
+#[mitm]
+hostname = api.ithome.com, napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com
