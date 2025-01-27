@@ -12,9 +12,9 @@ let body = $response.body;
 let obj = JSON.parse(body);
 
 if (url.indexOf(init) != -1) {
- obj.result.clientLevelOneNavV2 = obj.result.clientLevelOneNavV2.filter(item => item.en === "hotRank" || item.en === "match");
+ //obj.result.clientLevelOneNavV2 = obj.result.clientLevelOneNavV2.filter(item => item.en === "hotRank" || item.en === "match");
  //  活动栏
- delete obj.result.activityNav;
+ //delete obj.result.activityNav;
 }
 
 if (url.indexOf(topics) != -1) {
