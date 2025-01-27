@@ -2,7 +2,7 @@ const init = "/init";
 const topics = "topics";
 const hot = "/hotRank";
 const liveTabList = "/matchallapi/liveTabList";
-const recommend = "/recommend/getFeed"; // 新增推荐接口标识
+const recommend = "/recommend"; // 新增推荐接口标识
 
 let url = $request.url;
 let body = $response.body;
