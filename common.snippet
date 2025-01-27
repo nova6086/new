@@ -1,6 +1,5 @@
-
-#! name = 自用重写合集
-#! author = Kelv1n1n
+#!name = 自用重写合集
+#!author = Kelv1n1n
 
 ###### 滴滴首页图标
 #^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
@@ -12,34 +11,41 @@
 #^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.circle\.list\/ url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
 
 ###### 拼多多
+# 开屏
+#^https:\/\/api\.pinduoduo\.com\/api\/cappuccino\/splash\? url reject
 # 拼多多关注店铺商品动态推荐、店铺推荐
-^https:\/\/api\.pinduoduo\.com\/api\/social\/mall\/follow\/homepage url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
-^https:\/\/api\.pinduoduo\.com\/api\/social\/mall\/follow\/feed url reject-dict
+#^https:\/\/api\.pinduoduo\.com\/api\/social\/mall\/follow\/homepage url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
+#^https:\/\/api\.pinduoduo\.com\/api\/social\/mall\/follow\/feed url reject-dict
 # 拼多多首页顶部标签
 #^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
 # 拼多多历史浏览更多推荐
-^https:\/\/api\.pinduoduo\.com\/api\/hub\/zb_promotions_scene\/weak\/list\/get url reject-dict
-^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/footprint url reject-dict
-^https:\/\/api\.pinduoduo\.com\/api\/epiktetos\/footprint\/head_entrance url reject-dict
+#^https:\/\/api\.pinduoduo\.com\/api\/hub\/zb_promotions_scene\/weak\/list\/get url reject-dict
+#^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/footprint url reject-dict
+#^https:\/\/api\.pinduoduo\.com\/api\/epiktetos\/footprint\/head_entrance url reject-dict
 # 拼多多订单列表顶部横幅
 #^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/query_order_list_tabs_element url script-response-body https://github.com/kelv1n1n/script/raw/main/js/common.js
-^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/query_order_list_tabs_element url reject
-
-###### 虎扑 match-api.hupu.com, fairy.mobileapi.hupu.com
-# 首页顶部菜单保留热榜，赛事
-# ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/device\/v\d\/init url script-response-body https://raw.githubusercontent.com/kelv1n1n/script/main/js/hp.js
-# 专区顶部横幅
-^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/topics\/\d url script-response-body https://raw.githubusercontent.com/kelv1n1n/script/main/js/hp.js
-# 热搜榜过滤游戏帖子
-^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/hotRank url script-response-body https://raw.githubusercontent.com/kelv1n1n/script/main/js/hp.js
-# 赛事直播页tab、预测信息
-^https:\/\/match-api\.hupu\.com\/\d\/\d\.\d\.\d+\/matchallapi\/liveTabList url script-response-body https://raw.githubusercontent.com/kelv1n1n/script/main/js/hp.js
-^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/listPreviewFormulaExtendDtos url reject
-
-###### 京东去开屏
-#^http:\/\/\w{32}\.jddebug\.com\/diagnose\? url reject
+#^https:\/\/api\.pinduoduo\.com\/api\/aristotle\/query_order_list_tabs_element url reject
+# 广告ip请求
+#^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d" url reject
 
 ###### Spotify应用内会员广告
 ^https:\/\/spclient\.wg\.spotify\.com\/ads\/v3\/ads url reject-dict
 
-hostname = match-api.hupu.com, fairy.mobileapi.hupu.com, api.m.jd.com
+
+###### 招商银行
+# hostname = webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com
+# 开屏广告
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig url reject-200
+# 首页横幅广告
+^https?:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic url reject-dict
+
+###### 掌上生活
+# hostname = mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com
+# 开屏广告
+^https?:\/\/mbasecc\.(bas|bcs)\.cmbchina\.com\/Edge\/api\/mlife\.clientface\.clientservice\.api\.advertiseService\/preCacheAdvertiseSec url reject-dict
+# 设置栏目内广告
+#^https?:\/\/intellicc\.bas\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.render\.api\.render\/getDynamicDataSec url reject
+# 首页随机弹窗
+^https?:\/\/intellicc\.bcs\.cmbchina\.com\/Edge\/api\/mlife\.intelli\.adrender\.api\.AdWork\/getAdsBySlotId url reject-dict
+
+hostname = match-api.hupu.com, fairy.mobileapi.hupu.com, webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com, mbasecc.bas.cmbchina.com, mbasecc.bcs.cmbchina.com, intellicc.bas.cmbchina.com, intellicc.bcs.cmbchina.com
