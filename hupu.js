@@ -11,7 +11,7 @@ let obj = JSON.parse(body);
 // 处理首页菜单
 if (url.includes(init)) {
   obj.result.clientLevelOneNavV2 = obj.result.clientLevelOneNavV2.filter(
-    item => item.en === "hotRank" || item.en === "match"
+    item => item.en === "hotRank" || item.en === "match" || item.en === "recommend"
   );
   delete obj.result.activityNav;
 }
