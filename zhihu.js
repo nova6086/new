@@ -1,219 +1,59 @@
-// 2024-10-02 13:00
+#!name=知乎去广告强化版
+#!desc=基于日志分析更新，覆盖最新广告接口
 
-if (!$response.body) $done({});
-const url = $request.url;
-let obj = JSON.parse($response.body);
+# ------------ IP/域名直接拦截 ------------
+^https?:\/\/(118\.89\.204\.198|103\.41\.167\.237|2402:4e00:1200:ed00:0:9089:6dac:96b6) url reject
 
-if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
-  // 2024-04-29 新版知乎 回答列表下的相关提问
-  if (obj?.third_business?.related_queries?.queries?.length > 0) {
-    obj.third_business.related_queries.queries = [];
-  }
-} else if (url.includes("/api/cloud/zhihu/config/all")) {
-  // 全局配置
-  if (obj?.data?.configs?.length > 0) {
-    for (let i of obj.data.configs) {
-      if (i?.configKey === "feed_gray_theme") {
-        if (i?.configValue) {
-          i.configValue.start_time = 3818332800; // Unix 时间戳 2090-12-31 00:00:00
-          i.configValue.end_time = 3818419199; // Unix 时间戳 2090-12-31 23:59:59
-          i.status = false;
-        }
-      } else if (i?.configKey === "feed_top_res") {
-        // 首页顶部背景图
-        if (i?.configValue) {
-          i.configValue.start_time = 3818332800; // Unix 时间戳 2090-12-31 00:00:00
-          i.configValue.end_time = 3818419199; // Unix 时间戳 2090-12-31 23:59:59
-        }
-      }
-    }
-  }
-} else if (url.includes("/api/v4/answers")) {
-  if (obj?.data) {
-    delete obj.data;
-  }
-  if (obj?.paging) {
-    delete obj.paging;
-  }
-} else if (url.includes("/api/v4/articles")) {
-  const item = ["ad_info", "paging", "recommend_info"];
-  item.forEach((i) => {
-    delete obj[i];
-  });
-} else if (url.includes("/appcloud2.zhihu.com/v3/config")) {
-  if (obj?.config) {
-    if (obj.config?.homepage_feed_tab) {
-      obj.config.homepage_feed_tab.tab_infos = obj.config.homepage_feed_tab.tab_infos.filter((i) => {
-        if (i.tab_type === "activity_tab") {
-          i.start_time = "3818332800"; // Unix 时间戳 2090-12-31 00:00:00
-          i.end_time = "3818419199"; // Unix 时间戳 2090-12-31 23:59:59
-          return true;
-        } else {
-          return false;
-        }
-      });
-    }
-    if (obj.config?.hp_channel_tab) {
-      delete obj.config.hp_channel_tab;
-    }
-    if (obj.config?.zombie_conf) {
-      obj.config.zombie_conf.zombieEnable = false;
-    }
-    if (obj.config?.gray_mode) {
-      obj.config.gray_modeenable = false;
-      obj.config.gray_mode.start_time = "3818332800"; // Unix 时间戳 2090-12-31 00:00:00
-      obj.config.gray_mode.end_time = "3818419199"; // Unix 时间戳 2090-12-31 23:59:59
-    }
-    if (obj.config?.zhcnh_thread_sync) {
-      obj.config.zhcnh_thread_sync.LocalDNSSetHostWhiteList = [];
-      obj.config.zhcnh_thread_sync.isOpenLocalDNS = "0";
-      obj.config.zhcnh_thread_sync.ZHBackUpIP_Switch_Open = "0";
-      obj.config.zhcnh_thread_sync.dns_ip_detector_operation_lock = "1";
-      obj.config.zhcnh_thread_sync.ZHHTTPSessionManager_setupZHHTTPHeaderField = "1";
-    }
-    obj.config.zvideo_max_number = 1;
-    obj.config.is_show_followguide_alert = false;
-  }
-} else if (url.includes("/bazaar/vip_tab/header")) {
-  delete obj.activity_banner; // 一元领会员
-  delete obj.activity_window; // 会员弹窗
-  delete obj.vip_tip; // 开通会员提示信息
-} else if (url.includes("/commercial_api/app_float_layer")) {
-  // 悬浮图标
-  if ("feed_egg" in obj) {
-    delete obj;
-  }
-} else if (url.includes("/feed/render/tab/config")) {
-  // 首页二级标签 白名单 live直播 edu人工智能AI
-  if (obj?.selected_sections?.length > 0) {
-    obj.selected_sections = obj.selected_sections.filter((i) => ["recommend", "section"]?.includes(i?.tab_type));
-  }
-} else if (url.includes("/moments_v3")) {
-  if (obj?.data?.length > 0) {
-    obj.data = obj.data.filter((i) => !i?.title?.includes("为您推荐"));
-  }
-} else if (url.includes("/next-bff")) {
-  if (obj?.data?.length > 0) {
-    obj.data = obj.data.filter(
-      (i) =>
-        !(
-          i?.origin_data?.type?.includes("ad") ||
-          i?.origin_data?.resource_type?.includes("ad") ||
-          i?.origin_data?.next_guide?.title?.includes("推荐")
-        )
-    );
-  }
-} else if (url.includes("/next-data")) {
-  if (obj?.data?.data?.length > 0) {
-    obj.data.data = obj.data.data.filter((i) => !(i?.type?.includes("ad") || i?.data?.answer_type?.includes("PAID")));
-  }
-} else if (url.includes("/next-render")) {
-  if (obj?.data?.length > 0) {
-    obj.data = obj.data.filter(
-      (i) =>
-        !(
-          i?.adjson ||
-          i?.biz_type_list?.includes("article") ||
-          i?.biz_type_list?.includes("content") ||
-          i?.business_type?.includes("paid") ||
-          i?.section_info ||
-          i?.tips ||
-          i?.type?.includes("ad")
-        )
-    );
-  }
-} else if (url.includes("/questions/")) {
-  // 问题回答列表
-  if (obj?.data?.length > 0) {
-    obj.data = obj.data.filter((i) => !i?.target?.answer_type?.includes("paid"));
-  }
-  if (obj?.data?.ad_info) {
-    delete obj.data.ad_info;
-  }
-  if (obj?.ad_info) {
-    delete obj.ad_info;
-  }
-  if (obj?.query_info) {
-    delete obj.query_info;
-  }
-} else if (url.includes("/root/tab")) {
-  // 首页一级标签 白名单
-  if (obj?.tab_list?.length > 0) {
-    obj.tab_list = obj.tab_list.filter((i) => ["follow", "hot", "recommend"]?.includes(i?.tab_type));
-  }
-} else if (url.includes("/topstory/hot-lists/everyone-seeing")) {
-  // 热榜信息流
-  if (obj?.data?.data?.length > 0) {
-    // 合作推广
-    obj.data.data = obj.data.data.filter((i) => !i.target?.metrics_area?.text?.includes("合作推广"));
-  }
-} else if (url.includes("/topstory/hot-lists/total")) {
-  // 热榜排行榜
-  if (obj?.data?.length > 0) {
-    // 品牌甄选
-    obj.data = obj.data.filter((i) => !i.hasOwnProperty("ad"));
-  }
-} else if (url.includes("/topstory/recommend")) {
-  // 推荐信息流
-  if (obj?.data?.length > 0) {
-    obj.data = obj.data.filter((i) => {
-      if (i.type === "market_card" && i.fields?.header?.url && i.fields.body?.video?.id) {
-        let videoID = getUrlParamValue(item.fields.header.url, "videoID");
-        if (videoID) {
-          i.fields.body.video.id = videoID;
-        }
-      } else if (i.type === "common_card") {
-        if (i.extra?.type === "drama") {
-          // 直播内容
-          return false;
-        } else if (i.extra?.type === "zvideo") {
-          // 推广视频
-          let videoUrl = i.common_card.feed_content.video.customized_page_url;
-          let videoID = getUrlParamValue(videoUrl, "videoID");
-          if (videoID) {
-            i.common_card.feed_content.video.id = videoID;
-          }
-        } else if (i.common_card?.feed_content?.video?.id) {
-          let search = '"feed_content":{"video":{"id":';
-          let str = $response.body.substring($response.body.indexOf(search) + search.length);
-          let videoID = str.substring(0, str.indexOf(","));
-          i.common_card.feed_content.video.id = videoID;
-        } else if (i.common_card?.footline?.elements?.[0]?.text?.panel_text?.includes("广告")) {
-          return false;
-        } else if (i.common_card?.feed_content?.source_line?.elements?.[1]?.text?.panel_text?.includes("盐选")) {
-          return false;
-        } else if (i?.promotion_extra) {
-          // 营销信息
-          return false;
-        }
-        return true;
-      } else if (i.type?.includes("aggregation_card")) {
-        // 横排卡片 知乎热榜
-        return false;
-      } else if (i.type === "feed_advert") {
-        // 伪装成正常内容的卡片
-        return false;
-      }
-      return true;
-    });
-    fixPos(obj.data);
-  }
-}
+# ------------ 广告追踪拦截 ------------
+# Sugar广告主接口
+^https?:\/\/sugar\.zhihu\.com\/plutus_adreaper url reject-dict
+^https?:\/\/sugar\.zhihu\.com\/adx\/ url reject-dict
 
-$done({ body: JSON.stringify(obj) });
+# Web分析接口
+^https?:\/\/zhihu-web-analytics\.zhihu\.com\/api\/v\d+\/za\/logs\/batch url reject-dict
 
-// 修复offset
-function fixPos(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    arr[i].offset = i + 1;
-  }
-}
+# APM性能监控
+^https?:\/\/apm\.zhihu\.com\/collector\/apm url reject-dict
 
-function getUrlParamValue(url, queryName) {
-  return Object.fromEntries(
-    url
-      .substring(url.indexOf("?") + 1)
-      .split("&")
-      .map((pair) => pair.split("="))
-  )[queryName];
-}
+# DataHub数据收集
+^https?:\/\/datahub\.zhihu\.com\/collector\/zlab url reject-dict
+
+# ------------ 动态内容广告拦截 ------------
+# 启动页广告
+^https?:\/\/api\.zhihu\.com\/commercial_api\/(launch_v2|real_time_launch_v2)\? url reject-dict
+
+# 信息流广告
+^https?:\/\/api\.zhihu\.com\/topstory\/(recommend|hot-lists?) url script-response-body https://gist.githubusercontent.com/blackmatrix7/fhttps://github.com/waxingren/fenliu/raw/refs/heads/main/yinyong.js
+
+# 回答页广告
+^https?:\/\/api\.zhihu\.com\/answers\/\d+\/recommendations url reject-dict
+
+# 横幅广告
+^https?:\/\/api\.zhihu\.com\/commercial_api\/banners_v3\/app_topstory_banner url reject-dict
+
+# 用户页推广
+^https?:\/\/api\.zhihu\.com\/people\/\d+\/activities url script-response-body https://gist.githubusercontent.com/blackmatrix7/fhttps://github.com/waxingren/fenliu/raw/refs/heads/main/yinyong.js
+
+# 评论推广
+^https?:\/\/api\.zhihu\.com\/comment_v5\/.*\/comments url script-response-body https://gist.githubusercontent.com/blackmatrix7/fhttps://github.com/waxingren/fenliu/raw/refs/heads/main/yinyong.js
+
+# 搜索推广
+^https?:\/\/api\.zhihu\.com\/search\/preset_words\? url script-response-body https://gist.githubusercontent.com/blackmatrix7/fhttps://github.com/waxingren/fenliu/raw/refs/heads/main/yinyong.js
+
+# ------------ 配置更新 ------------
+# 动态配置拦截
+^https?:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\? url script-response-body https://gist.githubusercontent.com/blackmatrix7/fhttps://github.com/waxingren/fenliu/raw/refs/heads/main/yinyong.js
+^https?:\/\/appcloud2\.zhihu\.com\/v\d+\/config url reject-dict
+
+# ------------ 其他优化 ------------
+# 屏蔽用户引导
+^https?:\/\/api\.zhihu\.com\/moments\/(tab_v2|recent) url reject-dict
+
+# 屏蔽小红点
+^https?:\/\/api\.zhihu\.com\/notifications\/v\d\/count url reject-dict
+
+# 屏蔽直播推广
+^https?:\/\/api\.zhihu\.com\/live\/v\d\/recommendation\/list url reject-dict
+
+# ------------ Hostname ------------
+hostname = www.zhihu.com, api.zhihu.com, zhuanlan.zhihu.com, sugar.zhihu.com, zhihu-web-analytics.zhihu.com, apm.zhihu.com, datahub.zhihu.com, appcloud2.zhihu.com, m-cloud.zhihu.com
