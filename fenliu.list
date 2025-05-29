@@ -2,12 +2,11 @@
 #!desc=(F)针对部分APP和小程序广告进行拦截，某些APP要清除缓存或者重新安装APP，拦截广告才会生效！
 #!author=奶思
 #!homepage=https://github.com/fmz200/wool_scripts
-#!icon=
-#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
+#!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
+#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/filter.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2025-03-10 11:10:00
-#!support=约9392行
-#!proxy-select=reject
+#!date=2025-05-14 22:11:00
+#!support=约9760行
 #############################################
 # "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
 # "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
@@ -17,6 +16,131 @@
 # 1.2.3.4/24      /24表示网络的子网掩码长度，即前24位是网络部分，后8位是主机部分。这种表示法常用于描述特定范围内的IP地址
 # 6.7.8.9/32      /32表示整个32位的IP地址都用于表示这一个地址，即单独的一个IP地址
 #############################################
+
+
+
+# >>>>>>>>>>>>>>> ❣️ 1 ❣️ <<<<<<<<<<<<<<
+host, ad.12306.cn, direct
+
+
+
+
+# >>>>>>>>>>>>>>> ❣️ A ❣️ <<<<<<<<<<<<<<
+# > anti-ad
+host-keyword, anti-ad.net, direct
+
+# > Alibaba
+host,log.mmstat.com, direct
+host,sycm.mmstat.com, direct
+
+# > 爱影视
+host,static.jssp.tv, direct
+host,lain.bgm.tv, direct
+host,tiao.cjkypo.com, direct
+host,ok.zuidapic.com, direct
+host,ts.thefilehosting.com, direct
+host,deo.shopeemobile.com, direct
+host,m3u8.255tv.tk, direct
+host,m3u8.mstopq.com, direct
+host,ain.bgm.tv, direct
+host-keyword,vip.lz-cdn, direct
+host-keyword,ax1x.com, direct
+host-keyword,o.lencr.org, direct
+host-keyword,ttcdn-tos.kkimg.cc, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ D ❣️ <<<<<<<<<<<<<<
+# > 大师兄影视
+host,sdk.alibaba.com.ailbaba.me, direct
+host,img.ffzypic.com, direct
+host,img.liangzipic.com, direct
+host,img.bfzypic.com, direct
+host,img.kuaikanzy.net, direct
+host,vip.imgffzy.com, direct
+host,vip.ffzyread.com, direct
+host,cdn.jsdelivr.net, direct
+host,image.maimn.com, direct
+host-keyword,bfzycdn.com, direct
+host-keyword,vip.kuaikan-cdn, direct
+host-keyword,vip.ffzy-play, direct
+host-keyword,vip.ffzy-online, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ P ❣️ <<<<<<<<<<<<<<
+# > 苹果推送服务
+host-keyword, push.apple.com, direct
+# > 苹果时间同步
+host, time.apple.com, direct
+# > 苹果天气服务
+host-keyword, weather-edge.apple.com, direct
+host-keyword, weather-adge.apple.com, direct
+host-suffix, weather-data.apple.com, direct
+host-suffix, weather-map.apple.com, direct
+host-suffix, weather-analytics-events.apple.com, direct
+# > 苹果内购服务
+host-keyword, buy.itunes.apple.com, direct
+# > 苹果icloud
+host-keyword, icloud.com, direct
+# > 苹果输入法相关服务
+host-keyword, api.smoot.apple.com, direct
+host-keyword, api.smoot.apple.cn, direct
+# > 苹果iMessage服务
+host, init.ess.apple.com, direct
+# > 苹果其他服务
+host-keyword, ssl.apple.com, direct
+host-keyword, humb.apple.com, direct
+host, smp-device-content.apple.com, direct
+host-keyword, api-adservices.apple.com, direct
+host-keyword, ls.apple.com, direct
+host-keyword, gsa.apple.com, direct
+host-keyword, ess.apple.com, direct
+# > 苹果app store
+host, itunes.apple.com, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ Q ❣️ <<<<<<<<<<<<<<
+# > QQ空间
+host-keyword, ctc.qzs.qzone.qq.com, direct
+
+
+# >>>>>>>>>>>>>>> ❣️ S ❣️ <<<<<<<<<<<<<<
+# > Strava
+host,analytics.strava.com, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ T ❣️ <<<<<<<<<<<<<<
+# > Tencent
+host,fairplay.l.qq.com, direct
+host,livew.l.qq.com, direct
+host,vd.l.qq.com, direct
+host,vi.l.qq.com, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ U ❣️ <<<<<<<<<<<<<<
+# > Umeng
+host,msg.umeng.com, direct
+host,msg.umengcloud.com, direct
+
+
+
+# >>>>>>>>>>>>>>> ❣️ X ❣️ <<<<<<<<<<<<<<
+# > 携程
+host-keyword, aw-s.tripcdn.com, direct
+host-keyword, trip.com, direct
+
+
+
+# > 其他分流修正
+# > 路由器后台
+ip-cidr, 192.168.0.1/24, direct
+# > 天翼网关
+ip-cidr, 192.168.1.1/24, direct
+
 
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
@@ -450,7 +574,10 @@ host-suffix, ad.duoduo.link, reject
 
 # > 盯盯拍 广告联盟已包含
 
-
+# > 叮咚买菜
+host, trackercollect.ddxq.mobi, reject
+host, ddfs-public.ddimg.mobi, reject
+host, rttrack.ddxq.mobi, reject
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 
@@ -803,6 +930,9 @@ host-suffix, d.meituan.net, reject
 # > 美颜相机 去首页和轮播广告
 host, adui.tg.meitu.com, reject
 host, aaid.uyunad.com, reject
+
+# > 美柚
+host, ad.seeyouyima.com, reject
 
 # > 买单吧
 host-suffix, c-hzgt2.getui.com, reject
@@ -1159,9 +1289,8 @@ host-suffix, adashbc.m.taobao.com, reject
 # host-suffix, api.poll.video.qq.com, reject
 # host-suffix, static-res.qq.com, reject
 # host-suffix, stat.tpns.tencent.com, reject
-# host, h.trace.qq.com, reject
-# host-keyword, omgmta.qq.com, reject
-# host-keyword, omgmta1.qq.com, reject
+# host-suffix, omgmta.qq.com, reject
+# host-suffix, omgmta1.qq.com, reject
 
 # >  腾讯
 host-suffix, news.ssp.qq.com, reject
@@ -1552,8 +1681,14 @@ host, 39d83s.com, reject
 # > 小利生活
 host-keyword, mpos-pic.helipay.com, reject
 
+# > 小爱音箱
+host, mistat.xiaomi.com, reject
+
 # > 晓晓优选
 host-SUFFIX, api-htp.beizi.biz, REJECT
+host-suffix, yfanads.com, reject
+host-suffix, 1rtb.net, reject
+host-suffix, adwangmai.com, reject
 
 # > 新浪
 host-suffix, beacon.sina.com.cn, reject
@@ -1591,7 +1726,7 @@ host, ads.yahoo.com, reject
 host, ads.yahoo.de, reject
 
 # > 优酷
-host-suffix, sm.cn, reject
+#host-suffix, sm.cn, reject
 host-suffix, acz.youku.com,REJECT
 host-suffix, adx-core.youku.com,REJECT
 host-suffix, adx-open-service.youku.com,REJECT
@@ -1696,15 +1831,15 @@ host-suffix, vdapprecv.app.cntvwb.cn, reject
 
 # >>>>>>>>>>>>>>> ✅ Z ✅ <<<<<<<<<<<<<<
 # > 知乎
-# USER-AGENT,AVOS*, reject
-# host, appcloud.zhihu.com, reject
-# host, appcloud2.in.zhihu.com, reject
-# host, mqtt.zhihu.com, reject
-# host, sugar.zhihu.com, reject
-# host, crash2.zhihu.com, reject
-# host, 118.89.204.198, reject
-# IP-CIDR, 118.89.204.198/32, reject
-# IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128, reject
+USER-AGENT,AVOS*, reject
+host, appcloud.zhihu.com, reject
+host, appcloud2.in.zhihu.com, reject
+host, mqtt.zhihu.com, reject
+host, sugar.zhihu.com, reject
+host, crash2.zhihu.com, reject
+host, 118.89.204.198, reject
+IP-CIDR, 118.89.204.198/32, reject
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128, reject
 
 # > 中关村
 host, apppv.zol.com.cn, reject
