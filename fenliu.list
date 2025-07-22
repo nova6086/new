@@ -3,10 +3,11 @@
 #!author=奶思
 #!homepage=https://github.com/fmz200/wool_scripts
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
-#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/filter.list
+#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2025-05-14 22:11:00
-#!support=约9760行
+#!date=2025-07-14 22:20:17
+#!support=约9392行
+#!proxy-select=reject
 #############################################
 # "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
 # "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
@@ -16,131 +17,6 @@
 # 1.2.3.4/24      /24表示网络的子网掩码长度，即前24位是网络部分，后8位是主机部分。这种表示法常用于描述特定范围内的IP地址
 # 6.7.8.9/32      /32表示整个32位的IP地址都用于表示这一个地址，即单独的一个IP地址
 #############################################
-
-
-
-# >>>>>>>>>>>>>>> ❣️ 1 ❣️ <<<<<<<<<<<<<<
-host, ad.12306.cn, direct
-
-
-
-
-# >>>>>>>>>>>>>>> ❣️ A ❣️ <<<<<<<<<<<<<<
-# > anti-ad
-host-keyword, anti-ad.net, direct
-
-# > Alibaba
-host,log.mmstat.com, direct
-host,sycm.mmstat.com, direct
-
-# > 爱影视
-host,static.jssp.tv, direct
-host,lain.bgm.tv, direct
-host,tiao.cjkypo.com, direct
-host,ok.zuidapic.com, direct
-host,ts.thefilehosting.com, direct
-host,deo.shopeemobile.com, direct
-host,m3u8.255tv.tk, direct
-host,m3u8.mstopq.com, direct
-host,ain.bgm.tv, direct
-host-keyword,vip.lz-cdn, direct
-host-keyword,ax1x.com, direct
-host-keyword,o.lencr.org, direct
-host-keyword,ttcdn-tos.kkimg.cc, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ D ❣️ <<<<<<<<<<<<<<
-# > 大师兄影视
-host,sdk.alibaba.com.ailbaba.me, direct
-host,img.ffzypic.com, direct
-host,img.liangzipic.com, direct
-host,img.bfzypic.com, direct
-host,img.kuaikanzy.net, direct
-host,vip.imgffzy.com, direct
-host,vip.ffzyread.com, direct
-host,cdn.jsdelivr.net, direct
-host,image.maimn.com, direct
-host-keyword,bfzycdn.com, direct
-host-keyword,vip.kuaikan-cdn, direct
-host-keyword,vip.ffzy-play, direct
-host-keyword,vip.ffzy-online, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ P ❣️ <<<<<<<<<<<<<<
-# > 苹果推送服务
-host-keyword, push.apple.com, direct
-# > 苹果时间同步
-host, time.apple.com, direct
-# > 苹果天气服务
-host-keyword, weather-edge.apple.com, direct
-host-keyword, weather-adge.apple.com, direct
-host-suffix, weather-data.apple.com, direct
-host-suffix, weather-map.apple.com, direct
-host-suffix, weather-analytics-events.apple.com, direct
-# > 苹果内购服务
-host-keyword, buy.itunes.apple.com, direct
-# > 苹果icloud
-host-keyword, icloud.com, direct
-# > 苹果输入法相关服务
-host-keyword, api.smoot.apple.com, direct
-host-keyword, api.smoot.apple.cn, direct
-# > 苹果iMessage服务
-host, init.ess.apple.com, direct
-# > 苹果其他服务
-host-keyword, ssl.apple.com, direct
-host-keyword, humb.apple.com, direct
-host, smp-device-content.apple.com, direct
-host-keyword, api-adservices.apple.com, direct
-host-keyword, ls.apple.com, direct
-host-keyword, gsa.apple.com, direct
-host-keyword, ess.apple.com, direct
-# > 苹果app store
-host, itunes.apple.com, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ Q ❣️ <<<<<<<<<<<<<<
-# > QQ空间
-host-keyword, ctc.qzs.qzone.qq.com, direct
-
-
-# >>>>>>>>>>>>>>> ❣️ S ❣️ <<<<<<<<<<<<<<
-# > Strava
-host,analytics.strava.com, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ T ❣️ <<<<<<<<<<<<<<
-# > Tencent
-host,fairplay.l.qq.com, direct
-host,livew.l.qq.com, direct
-host,vd.l.qq.com, direct
-host,vi.l.qq.com, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ U ❣️ <<<<<<<<<<<<<<
-# > Umeng
-host,msg.umeng.com, direct
-host,msg.umengcloud.com, direct
-
-
-
-# >>>>>>>>>>>>>>> ❣️ X ❣️ <<<<<<<<<<<<<<
-# > 携程
-host-keyword, aw-s.tripcdn.com, direct
-host-keyword, trip.com, direct
-
-
-
-# > 其他分流修正
-# > 路由器后台
-ip-cidr, 192.168.0.1/24, direct
-# > 天翼网关
-ip-cidr, 192.168.1.1/24, direct
-
 
 
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
@@ -961,11 +837,12 @@ host, v1.log.moji.com, reject
 # > 咪咕视频
 host-suffix, ad.cmvideo.cn, reject
 host, ggc.cmvideo.cn, reject
-host, ggic03.miguvideo.com, reject
-host, ggmk.miguvideo.com, reject
 host, ggv.cmvideo.cn, reject
 host, ggx.cmvideo.cn, reject
 host, ggx03.miguvideo.com, reject
+host, ggic03.miguvideo.com, reject
+host, ggmk.miguvideo.com, reject
+host, ggadoffline.miguvideo.com, reject
 
 # > 小米米家
 host, sdkconfig.ad.xiaomi.com, reject
@@ -1059,7 +936,7 @@ host-keyword, api-access.pangolin-sdk-toutiao.com, reject
 ;host-keyword, mssdk-bu.bytedance.com, reject
 ;host-keyword, 365yg.com, reject
 ;host-keyword, ppx.byteimg.com, reject
-;host-keyword, i.snssdk.com, reject, reject
+;host-keyword, i.snssdk.com, reject
 
 # > 影响端传媒正常运行，默认关闭
 ;host-suffix, cloudfront.net, reject
@@ -1273,24 +1150,36 @@ host-suffix, m-adash.m.taobao.com, reject
 host-suffix, adashbc.m.taobao.com, reject
 
 # > 腾讯视频
-# host, adsmind.gdtimg.com, reject
-# host, btrace.qq.com, reject
-# host, btrace.video.qq.com, reject
-# host, info4.video.qq.com, reject
-# host, info6.video.qq.com, reject
-# host, ios.video.mpush.qq.com, reject
-# host, mtrace.qq.com, reject
-# host, p.l.qq.com, reject
-# host, pgdt.gtimg.cn, reject
-# host, rpt.gdt.qq.com, reject
-# host-suffix, trace.qq.com, reject
-# host-suffix, tetrack.qq.com, reject
-# host-suffix, tpns.tencent.com, reject
-# host-suffix, api.poll.video.qq.com, reject
-# host-suffix, static-res.qq.com, reject
-# host-suffix, stat.tpns.tencent.com, reject
-# host-suffix, omgmta.qq.com, reject
-# host-suffix, omgmta1.qq.com, reject
+# 去除开屏，播放，暂停，青少年等广告。开启下面的规则播放时会有10秒左右的卡顿
+# host,pgdt.gtimg.cn,REJECT
+# host,ugchsy.gtimg.com,REJECT
+# host,adsmind.gdtimg.com,REJECT
+# host,btrace.video.qq.com,REJECT
+# host,info4.video.qq.com,REJECT
+# host,info6.video.qq.com,REJECT
+# host-SUFFIX,api.poll.video.qq.com,REJECT
+# host,activity.video.qq.com,REJECT
+# host,ios.video.mpush.qq.com,REJECT
+# host,p.l.qq.com,REJECT
+# host,rpt.gdt.qq.com,REJECT
+# host-SUFFIX,trace.qq.com,REJECT
+# host-SUFFIX,tetrack.qq.com,REJECT
+# host-SUFFIX,tpns.tencent.com,REJECT
+# host-SUFFIX,stat.tpns.tencent.com,REJECT
+# host-SUFFIX,static-res.qq.com,REJECT
+# host-SUFFIX,omgmta.qq.com,REJECT
+# host-SUFFIX,omgmta1.qq.com,REJECT
+# host,tux.qq.com,REJECT
+# host,iacc.qq.com,REJECT
+# host,p2.l.qq.com,REJECT
+# host,v3.gdt.qq.com,REJECT
+# host,rmonitor.qq.com,REJECT
+# host,xs.gdt.qq.com,REJECT
+# host,aegis.qq.com,REJECT
+# host,rdelivery.qq.com,REJECT
+# host,wallpaper-1258344696.file.myqcloud.com,REJECT
+# host,wallpaper-test-1258344696.file.myqcloud.com,REJECT
+# IP-CIDR,183.201.213.194/24,REJECT
 
 # >  腾讯
 host-suffix, news.ssp.qq.com, reject
@@ -1649,21 +1538,11 @@ host-keyword, m.panda.voiceads.cn, reject
 host-keyword, iflyad.bj.openstorage.cn, reject
 
 # > 喜马拉雅
-host, adbehavior.ximalaya.com, reject
-host, adwbs.ximalaya.com, reject
-host-suffix, ad.test.ximalaya.com, reject
-host-suffix, adse.test.ximalaya.com, reject
-host-suffix, adweb.test.ximalaya.com, reject
-host-suffix, adweb.ximalaya.com, reject
-host-suffix, linkeye.ximalaya.com, reject
-host-suffix, location.ximalaya.com, reject
-host-suffix, xdcs-collector.ximalaya.com, reject
-host-suffix, ad.ximalaya.com, reject
-host-suffix, adse.ximalaya.com, reject
-host-suffix, adse.wsa.ximalaya.com, reject
-host-suffix, adbehavior.wsa.ximalaya.com, reject
-host-suffix, adsebs.ximalaya.com, reject
-host-suffix, adbs.ximalaya.com, reject
+host, adse.ximalaya.com, REJECT
+host, adsehera.ximalaya.com, REJECT
+host, adse.wsa.ximalaya.com, REJECT
+host, adbehavior.ximalaya.com, REJECT
+host, adbehavior.wsa.ximalaya.com, REJECT
 
 # > 小红书
 host, ads-img-qc.xhscdn.com, reject
@@ -9896,7 +9775,6 @@ host-suffix, sape.ru, reject
 host-suffix, tns-counter.ru, reject
 host-suffix, winlinebet.ru, reject
 host-suffix, yadro.ru, reject
-host-suffix, yandex.ru, reject
 host-suffix, ad.3dnews.ru, reject
 host-suffix, rtb.com.ru, reject
 host-suffix, dmg.digitaltarget.ru, reject
@@ -9918,9 +9796,6 @@ host-suffix, pixel.vihub.ru, reject
 host-suffix, ad.xmovies8.ru, reject
 host-suffix, counter.yadro.ru, reject
 host-suffix, mg.yadro.ru, reject
-host-suffix, an.yandex.ru, reject
-host-suffix, mc.yandex.ru, reject
-host-suffix, mc.yandex.ru, reject
 host-suffix, spb.bid.run, reject
 host-suffix, adrotator.se, reject
 host-suffix, ingest.sentry, reject
@@ -10076,6 +9951,15 @@ host-suffix, yumcs.xiaohuau.xyz, reject
 host-suffix, banner.itweb.co.za, reject
 host-suffix, banners.itweb.co.za, reject
 host-suffix, xn--3bs795g.zone, reject
+host-suffix, ppezijkacga.com, reject
+host-suffix, kreopbkabsit.com, reject
+host-suffix, admiitad.com, reject
+host-suffix, thelifeandmore.com, reject
+host-suffix, fractionfridgejudiciary.com, reject
+host-suffix, ocponcphaafb.com, reject
+host-suffix, tapwhigwy.com, reject
+host-suffix, ahqovxli.com, reject
+host-suffix, fipabtomqok.com, reject
 
 # IPV4 addresses
 IP-CIDR, 117.177.248.17/32, reject
