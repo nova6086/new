@@ -19,6 +19,7 @@ HOST-SUFFIX, pbs.twimg.com, PROXY
 HOST-SUFFIX, is.gd, PROXY
 HOST-KEYWORD, happymh.com, PROXY
 HOST-SUFFIX, portx.cc, PROXY
+HOST-SUFFIX, sxsy19.com, PROXY
 
 # > Alphabet
 HOST-SUFFIX, abc.xyz, PROXY
