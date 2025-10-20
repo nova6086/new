@@ -8,7 +8,7 @@
 > TgChannel         https://t.me/ddgksf2021
 > Contribute        https://t.me/ddgksf2013_bot
 > Feedback          📮 ddgksf2013@163.com 📮
-> UpdateTime        2025-05-03
+> UpdateTime        2025-10-14
 > Suitable          自行观看“# > ”注释内容
 > Attention         如需引用请注明出处，谢谢合作！
 > ScriptURL         https://gist.githubusercontent.com/ddgksf2013/d43179d848586d561dbb968dee93bae8/raw/Zhihu.Adblock.js
@@ -126,18 +126,24 @@
 # > 知乎_回答页面相关搜索词@ddgksf2013
 ^https?:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/answer\/ url reject-dict
 
+# > 知乎_广告请求@ddgksf2013
+^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/v2\/resolv url reject-200
+
 # > 知乎_首页左侧图标@ddgksf2013
 ^https?:\/\/api\.zhihu\.com\/root\/window url reject-dict
 
 # > 知乎_我的页面底部@ddgksf2013
 ^https?:\/\/www\.zhihu\.com\/appview\/v\d\/zhmore url reject-200
 
+# > 知乎_回答页底部相关圈子及搜索词@ddgksf2013
+^https?:\/\/.*zhihu.com\/(answers|articles)\/v\d url jsonjq-response-body '.third_business |= del(.related_queries, .ring)'
+
 # > 知乎_搜索发现@ddgksf2013
 https://api.zhihu.com/search/hot_search url script-response-body https://gist.githubusercontent.com/ddgksf2013/d43179d848586d561dbb968dee93bae8/raw/Zhihu.Adblock.js
 
 [mitm] 
 
-hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,m-cloud.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226
+hostname = 118.89.204.198,103.41.167.237,2402:4e00:1200:ed00:0:9089:6dac:96b6,www.zhihu.com,api.zhihu.com,page-info.zhihu.com,zhuanlan.zhihu.com,appcloud2.zhihu.com,m-cloud.zhihu.com,103.41.167.236,103.41.167.234,103.41.167.235,103.41.167.226
 
 
 ***********************************/
