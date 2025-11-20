@@ -1,4 +1,3 @@
-// 引用链接: https://kelee.one/Resource/JavaScript/IThome/IThome_remove_ads.js
 // 2025-10-24 03:22:31
 
 (() => {
