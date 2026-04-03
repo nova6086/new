@@ -12,23 +12,23 @@ https://nba.hupu.com/schedule
 
 
 央视,#genre#
-CCTV1,http://119.123.176.91:8086/hls/2/index.m3u8
-CCTV2,http://119.123.176.91:8086/hls/3/index.m3u8
-CCTV3,http://119.123.176.91:8086/hls/4/index.m3u8
-CCTV4,http://119.123.176.91:8086/hls/5/index.m3u8
-CCTV5,http://119.123.176.91:8086/hls/6/index.m3u8
-CCTV5+,http://119.123.176.91:8086/hls/252/index.m3u8
-CCTV6,http://119.123.176.91:8086/hls/7/index.m3u8
-CCTV7,http://119.123.176.91:8086/hls/8/index.m3u8
-CCTV8,http://119.123.176.91:8086/hls/9/index.m3u8
-CCTV9,http://119.123.176.91:8086/hls/10/index.m3u8
-CCTV10,http://119.123.176.91:8086/hls/11/index.m3u8
-CCTV11,http://119.123.176.91:8086/hls/12/index.m3u8
-CCTV12,http://119.123.176.91:8086/hls/13/index.m3u8
-CCTV13,http://119.123.176.91:8086/hls/14/index.m3u8
-CCTV14,http://119.123.176.91:8086/hls/15/index.m3u8
-CCTV15,http://119.123.176.91:8086/hls/16/index.m3u8
-CCTV16,http://119.123.176.91:8086/hls/17/index.m3u8
+CCTV1,http://119.123.177.175:8086/hls/2/index.m3u8
+CCTV2,http://119.123.177.175:8086/hls/3/index.m3u8
+CCTV3,http://119.123.177.175:8086/hls/4/index.m3u8
+CCTV4,http://119.123.177.175:8086/hls/5/index.m3u8
+CCTV5,http://119.123.177.175:8086/hls/6/index.m3u8
+CCTV5+,http://119.123.177.175:8086/hls/252/index.m3u8
+CCTV6,http://119.123.177.175:8086/hls/7/index.m3u8
+CCTV7,http://119.123.177.175:8086/hls/8/index.m3u8
+CCTV8,http://119.123.177.175:8086/hls/9/index.m3u8
+CCTV9,http://119.123.177.175:8086/hls/10/index.m3u8
+CCTV10,http://119.123.177.175:8086/hls/11/index.m3u8
+CCTV11,http://119.123.177.175:8086/hls/12/index.m3u8
+CCTV12,http://119.123.177.175:8086/hls/13/index.m3u8
+CCTV13,http://119.123.177.175:8086/hls/14/index.m3u8
+CCTV14,http://119.123.177.175:8086/hls/15/index.m3u8
+CCTV15,http://119.123.177.175:8086/hls/16/index.m3u8
+CCTV16,http://119.123.177.175:8086/hls/17/index.m3u8
 CCTV17,http://home.szjim.top:4000/udp/239.77.1.121:5146
 CGTN,https://english-livebkali.cgtn.com/live/encgtn_0.m3u8
 CGTN记录,https://english-livebkali.cgtn.com/live/doccgtn_0.m3u8
@@ -38,27 +38,27 @@ CGTN西语,https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LS
 CGTN阿语,https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
 
 卫视,#genre#
-广东卫视,http://119.123.176.91:8086/hls/44/index.m3u8
-广西卫视,http://119.123.176.91:8086/hls/48/index.m3u8
-海南卫视,http://119.123.176.91:8086/hls/50/index.m3u8
-河南卫视,http://119.123.176.91:8086/hls/52/index.m3u8
-湖北卫视,http://119.123.176.91:8086/hls/54/index.m3u8
-湖南卫视,http://119.123.176.91:8086/hls/55/index.m3u8
-江苏卫视,http://119.123.176.91:8086/hls/59/index.m3u8
-深圳卫视,http://119.123.176.91:8086/hls/79/index.m3u8
-四川卫视,http://119.123.176.91:8086/hls/82/index.m3u8
-重庆卫视,http://119.123.176.91:8086/hls/100/index.m3u8
-浙江卫视,http://119.123.176.91:8086/hls/101/index.m3u8
-浙江卫视,http://119.123.176.91:8086/hls/128/index.m3u8
-东方卫视,http://119.123.176.91:8086/hls/129/index.m3u8
-北京卫视,http://119.123.176.91:8086/hls/131/index.m3u8
-江西卫视,http://119.123.176.91:8086/hls/132/index.m3u8
-山东卫视,http://119.123.176.91:8086/hls/133/index.m3u8
-安徽卫视,http://119.123.176.91:8086/hls/137/index.m3u8
-东南卫视,http://119.123.176.91:8086/hls/161/index.m3u8
-天津卫视,http://119.123.176.91:8086/hls/140/index.m3u8
-贵州卫视,http://119.123.176.91:8086/hls/143/index.m3u8
-河北卫视,http://119.123.176.91:8086/hls/144/index.m3u8
+广东卫视,http://119.123.177.175:8086/hls/44/index.m3u8
+广西卫视,http://119.123.177.175:8086/hls/48/index.m3u8
+海南卫视,http://119.123.177.175:8086/hls/50/index.m3u8
+河南卫视,http://119.123.177.175:8086/hls/52/index.m3u8
+湖北卫视,http://119.123.177.175:8086/hls/54/index.m3u8
+湖南卫视,http://119.123.177.175:8086/hls/55/index.m3u8
+江苏卫视,http://119.123.177.175:8086/hls/59/index.m3u8
+深圳卫视,http://119.123.177.175:8086/hls/79/index.m3u8
+四川卫视,http://119.123.177.175:8086/hls/82/index.m3u8
+重庆卫视,http://119.123.177.175:8086/hls/100/index.m3u8
+浙江卫视,http://119.123.177.175:8086/hls/101/index.m3u8
+浙江卫视,http://119.123.177.175:8086/hls/128/index.m3u8
+东方卫视,http://119.123.177.175:8086/hls/129/index.m3u8
+北京卫视,http://119.123.177.175:8086/hls/131/index.m3u8
+江西卫视,http://119.123.177.175:8086/hls/132/index.m3u8
+山东卫视,http://119.123.177.175:8086/hls/133/index.m3u8
+安徽卫视,http://119.123.177.175:8086/hls/137/index.m3u8
+东南卫视,http://119.123.177.175:8086/hls/161/index.m3u8
+天津卫视,http://119.123.177.175:8086/hls/140/index.m3u8
+贵州卫视,http://119.123.177.175:8086/hls/143/index.m3u8
+河北卫视,http://119.123.177.175:8086/hls/144/index.m3u8
 青海卫视,http://home.szjim.top:4000/udp/239.253.43.125:5146
 三沙卫视,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.172:5140
 山西卫视,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.211:5140
@@ -71,17 +71,17 @@ CGTN阿语,https://arabic-liveali.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LST
 
 
 广东,#genre#
-广东大湾区,http://119.123.176.91:8086/hls/29/index.m3u8
-广东民生,http://119.123.176.91:8086/hls/39/index.m3u8
-广东少儿,http://119.123.176.91:8086/hls/40/index.m3u8
-广东体育,http://119.123.176.91:8086/hls/42/index.m3u8
-广东新闻,http://119.123.176.91:8086/hls/45/index.m3u8
-广东影视,http://119.123.176.91:8086/hls/46/index.m3u8
-广东珠江,http://119.123.176.91:8086/hls/47/index.m3u8
-广东经济,http://119.123.176.91:8086/hls/63/index.m3u8
+广东大湾区,http://119.123.177.175:8086/hls/29/index.m3u8
+广东民生,http://119.123.177.175:8086/hls/39/index.m3u8
+广东少儿,http://119.123.177.175:8086/hls/40/index.m3u8
+广东体育,http://119.123.177.175:8086/hls/42/index.m3u8
+广东新闻,http://119.123.177.175:8086/hls/45/index.m3u8
+广东影视,http://119.123.177.175:8086/hls/46/index.m3u8
+广东珠江,http://119.123.177.175:8086/hls/47/index.m3u8
+广东经济,http://119.123.177.175:8086/hls/63/index.m3u8
 嘉佳卡通,http://home.szjim.top:4000/udp/239.77.0.179:5146
 岭南戏曲,http://home.szjim.top:4000/udp/239.77.0.122:5146
-深圳都市,http://119.123.176.91:8086/hls/103/index.m3u8
+深圳都市,http://119.123.177.175:8086/hls/103/index.m3u8
 广州综合,https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=e381ab098841a0badbf7e11f24143cf7&txTime=18e6ff43701
 广州新闻,https://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d217bd6cf85c93e3b47b96504cd2dc1c&txTime=18e6ff29019
 南国都市,https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de
@@ -140,7 +140,8 @@ Astro AEC,https://o11.163189.xyz/stream/live/aec/
 网球CANAL+ Sport 3,http://46.36.37.186:33379/play/CANAL%2B%20Sport%203.m3u8
 美国NBAㅤ,http://103.148.44.38:8000/play/a03m/index.m3u8
 美国NBA,http://23.237.104.106:8080/USA_NBA/tracks-v1a1/mono.m3u8
-美国NBC体育,https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master.m3u8
+美国NBC NOW,https://xumo-xumoent-vc-122-sjv70.fast.nbcuni.com/live/master.m3u8
+美国福克斯体育1台,http://206.212.244.71:8080/live/0QgnMM/235554/46792.ts
 美国UFC,https://linear-893.frequency.stream/dist/xumo/893/hls/master/playlist.m3u8
 美国SPEED SPORT 1,https://aka-live1050.delivery.roku.com/63e7c506-7574-46d4-a388-2453864eae36/t2-origin/out/v1/live.m3u8
 天空体育主赛事 4K,https://starshare.st/live/8zpo3GsVY7/beneficial2concern/581305.ts
@@ -186,11 +187,11 @@ Astro AEC,https://o11.163189.xyz/stream/live/aec/
 波兰CANAL+ Sport 3,http://193.24.244.60:1001/udp/239.254.1.163:6060
 波兰CANAL+ Sport 4,http://193.24.244.60:1001/udp/239.254.1.242:6060
 波兰CANAL+ Sport 5,http://193.24.244.60:1001/udp/239.254.1.15:6060
-加拿大TNS1,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/182183
-加拿大TNS2,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/182184
-加拿大TNS3,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/182185
-加拿大TNS4,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/182188
-加拿大TNS5,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/182187
+加拿大TNS1,http://206.212.244.71:8080/live/0QgnMM/235554/57292.ts
+加拿大TNS2,http://206.212.244.71:8080/live/0QgnMM/235554/16129.ts
+加拿大TNS3,http://206.212.244.71:8080/live/0QgnMM/235554/10389.ts
+加拿大TNS4,http://206.212.244.71:8080/live/0QgnMM/235554/16130.ts
+加拿大TNS5,http://206.212.244.71:8080/live/0QgnMM/235554/16131.ts
 加拿大TNS 4K,http://czstream.com:826/LouCarey/KYsHfE1YLU/119333
 哥伦比亚ESPN,http://179.1.199.50:9000/play/a07j
 哥伦比亚ESPN 2,http://179.1.199.50:9000/play/a08f
@@ -205,7 +206,9 @@ Astro AEC,https://o11.163189.xyz/stream/live/aec/
 CHC动作电影,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.174:5140
 CHC家庭影院,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.173:5140
 CHC影迷电影,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.175:5140
-华数动画电影,http://119.123.176.91:8086/hls/78/index.m3u8
+华数动画电影,http://119.123.177.175:8086/hls/78/index.m3u8
+法国少儿gulli,http://86.202.245.66:9981/stream/channelid/2010325787?profile=pass
+法国电影TF1 Séries Films,http://86.202.245.66:9981/stream/channelid/1223321913?profile=pass
 五星体育,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.58:5140
 武术世界,http://www.frankgb.cn:4022/udp/239.49.0.205:8000
 龙华电影,https://cdn8.163189.xyz/163189/lhdy
@@ -219,26 +222,29 @@ CHC影迷电影,http://jasonzhangnas.f3322.net:7088/udp/233.18.204.175:5140
 邵氏武侠,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpub
 HBO,http://23.237.104.106:8080/USA_HBO/tracks-v1a1/mono.m3u8
 HBO精选,http://23.237.104.106:8080/USA_HBO2/tracks-v1a1/mono.m3u8
+HBO喜剧,http://23.237.104.106:8080/USA_HBO_COMEDY/tracks-v1a1/mono.m3u8
+HBO王牌,http://23.237.104.106:8080/USA_HBO_ZONE/tracks-v1a1/mono.m3u8
 Cinemax,http://23.237.104.106:8080/USA_CINEMAX/tracks-v1a1/mono.m3u8
 Cinemax精选,http://23.237.104.106:8080/USA_MOREMAX/mono.m3u8
 Cinemax经典,http://23.237.104.106:8080/USA_5STARMAX/tracks-v1a1/mono.m3u8
-美国ION TV,https://b54ddbfc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/VENMVFZQbHVzX0lPTl9ITFM/playlist.m3u8
+美国ion,https://b54ddbfc.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/VENMVFZQbHVzX0lPTl9ITFM/playlist.m3u8
+美国LMN,http://23.237.104.106:8080/USA_LMN/tracks-v1a1/mono.m3u8
+BBC美国,http://206.212.244.71:8080/live/0QgnMM/235554/20194.ts
 猫和老鼠轮播,https://live20.bozztv.com/giatvplayout7/giatv-208314/tracks-v1a1/mono.ts.m3u8
 憨豆先生动画轮播,https://amg00627-amg00627c31-rakuten-fr-3991.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanfrcc-rakutenfr/playlist.m3u8
 4GTV经典动画轮播,https://tv.iill.top/4gtv/4gtv-live022
+尼克幼儿,http://206.212.244.71:8080/live/0QgnMM/235554/9807.ts
+尼克少儿,http://206.212.244.71:8080/live/0QgnMM/235554/38.ts
 尼克少儿,http://23.237.104.106:8080/USA_NICKELODEON/tracks-v1a1/mono.m3u8
-尼克少儿,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/176267
-尼克动画频道,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/176266
+尼克青年,http://206.212.244.71:8080/live/0QgnMM/235554/140004.ts
 尼克少儿 台湾,https://tv.iill.top/4gtv/4gtv-live105
-尼克少儿 俄罗斯,http://de2.mirror-tv.net:80/nickelodeon-hd/tracks-v1a1a2a3/mono.m3u8?token=cy5g5hwf_1vda
 CN卡通,http://23.237.104.106:8080/USA_CARTOON_NETWORK/tracks-v1a1/mono.m3u8
-CN卡通,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/176241
+CN卡通,http://206.212.244.71:8080/live/0QgnMM/235554/57380.ts
+CN卡通 加拿大,http://206.212.244.71:8080/live/0QgnMM/235554/57356.ts
 CN卡通 捷克,https://estreams.tv.nej.cz/dash/CH_CARTOON_HD.ism/playlist.mpd
-CN卡通 瑞士,https://viamotionhsi.netplus.ch/live/eds/cartoonnetwork/browser-HLS8/cartoonnetwork.m3u8
+探索家庭频道,http://206.212.244.71:8080/live/0QgnMM/235554/10538.ts
 BOOMERANG,http://23.237.104.106:8080/USA_BOOMERANG/tracks-v1a1/mono.m3u8
-Starz Kids & Family,http://ky-tv.cc:80/eric@kowalewski.com/1933542380/176083
 COMEDY CENTRAL,http://23.237.104.106:8080/USA_COMEDY_CENTRAL/tracks-v1a1/mono.m3u8
-COMEDY CENTRAL 瑞士,https://viamotionhsi.netplus.ch/live/eds/comedycentral/browser-dash/comedycentral.mpd
 NHK综合频道,https://tsb-mega.i9.ee/stream/nhkg_hevc_1080p
 NHK卫星频道,http://136.158.97.2:6610/001/2/ch00000090990000001214/manifest.mpd?JITPDRMType=NO&virtualDomain=001.live_hls.zte.com&BreakPoint=0&boid=001&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAqvraU%2BA8%2FN%2B6NCam0oBPn1syK4TH4mOENKJ45mwOyS0g%3D%3D
 富士卫星频道,http://136.158.97.2:6610/001/2/ch00000090990000001165/manifest.mpd?JITPDRMType=NO&virtualDomain=001.live_hls.zte.com&BreakPoint=0&boid=001&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAqH%2B5l99GK8Rg%2FAZvU0C4flsyK4TH4mOENKJ45mwOyS0g%3D%3D
@@ -262,7 +268,8 @@ Love Nature 4K,https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
 英国BBC新闻,https://vs-cmaf-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/iptv_mse_v0_hevc.mpd
 英国BBC新闻 美国版,https://d3pxo1qcgzxtxs.cloudfront.net/10005/99951298/hls/playlist.m3u8?ads.xumo_channelId=99951298
 天空新闻,https://xumo-drct-skynews-nc91a.fast.nbcuni.com/live/master.m3u8
-美国CNN,https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8
+美国CNN,http://206.212.244.71:8080/live/0QgnMM/235554/1817.ts
+美国CNN 欧洲版,https://ds2c506obo7m8.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7zjq3tdqasbg8/index.m3u8
 美国CNN 英国版,https://d3fzntptkfpmvg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-6rc4k0y56fezj/CNNFAST_GB.m3u8
 美国Bloomberg,https://d3h4bmiab2fzqu.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/Bloomberg-kr-prod/index.m3u8
 德国DW,https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
@@ -426,11 +433,6 @@ NBA 30,http://czstream.com:826/LouCarey/KYsHfE1YLU/119742
 华盛顿奇才,http://czstream.com:826/LouCarey/KYsHfE1YLU/102135
 
 欧洲电视台,#genre#
-法国一台,https://viamotionhsi.netplus.ch/live/eds/tf1hd/browser-HLS8/tf1hd.m3u8
-法国二台,https://viamotionhsi.netplus.ch/live/eds/france2hd/browser-HLS8/france2hd.m3u8
-法国三台,https://viamotionhsi.netplus.ch/live/eds/france3hd/browser-HLS8/france3hd.m3u8
-法国四台,https://viamotionhsi.netplus.ch/live/eds/france4hd/browser-HLS8/france4hd.m3u8
-法国五台,https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-HLS8/france5hd.m3u8
 意大利1台,https://mynettv.duckdns.org/stream/channelid/749089377?profile=pass
 意大利1台 4K,https://mynettv.duckdns.org/stream/channelid/1539667822?profile=pass
 意大利2台,https://mynettv.duckdns.org/stream/channelid/1122914994?profile=pass
@@ -440,7 +442,18 @@ NBA 30,http://czstream.com:826/LouCarey/KYsHfE1YLU/119742
 意大利3台,https://mynettv.duckdns.org/stream/channelid/738155134?profile=passs
 意大利4台,https://mynettv.duckdns.org/stream/service/fa29bac8851202b7d89b5c879ec21c16
 意大利5台,https://mynettv.duckdns.org/stream/service/3e226482c0fbfbe97390be59490d60d9
-TV5Monde,#genre#
+法国电视1台,http://86.202.245.66:9981/stream/channelid/1219859297?profile=pass
+法国电视2台,http://86.202.245.66:9981/stream/channelid/1336998922?profile=pass
+法国电视3台,http://86.202.245.66:9981/stream/channelid/891927778?profile=pass
+法国电视4台,http://86.202.245.66:9981/stream/channelid/861442215?profile=pass
+法国电视5台,http://86.202.245.66:9981/stream/channelid/747479231?profile=pass
+法国新闻台,http://86.202.245.66:9981/stream/channelid/243928775?profile=pass
+法国议会台,http://86.202.245.66:9981/stream/channelid/297592533?profile=pass
+法国CSTAR,http://86.202.245.66:9981/stream/channelid/1740296275?profile=pass
+法国M6,http://86.202.245.66:9981/stream/channelid/2042153159?profile=pass
+法国W9,http://86.202.245.66:9981/stream/channelid/332416096?profile=pass
+法国T18,http://86.202.245.66:9981/stream/channelid/2003476313?profile=pass
+法国NOVO19,http://86.202.245.66:9981/stream/channelid/1247580634?profile=pass
 法语世界 法比瑞,https://ott.tv5monde.com/Content/HLS/Live/channel(fbs)/variant.m3u8
 法语世界 欧洲,https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/index.m3u8
 法语世界 中东,https://ott.tv5monde.com/Content/HLS/Live/channel(orient)/variant.m3u8
