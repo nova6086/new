@@ -13,7 +13,8 @@ if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
 if (
-    url.includes("/api/news/index"))
+    url.includes("/api/news/index") ||
+    url.includes("/api/topmenu/getfeeds")
 ) {
   if (obj?.data?.list?.length > 0) {
     let list = obj.data.list;
