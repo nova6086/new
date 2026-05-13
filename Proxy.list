@@ -75,3 +75,22 @@ HOST-KEYWORD, google.com., PROXY
 # 哔哩哔哩
 # HOST, mall.bilibili.com, REJECT
 # HOST, passport.bilibili.com, REJECT
+
+# 腾讯视频开屏广告
+DOMAIN,dp3.qq.com,REJECT
+DOMAIN,info4.video.qq.com,REJECT
+DOMAIN,info6.video.qq.com,REJECT
+DOMAIN,ios.video.mpush.qq.com,REJECT
+DOMAIN,mtrace.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+DOMAIN,btrace.qq.com,REJECT
+DOMAIN-SUFFIX,appcfg.v.qq.com,REJECT
+DOMAIN-SUFFIX,gdt.qq.com,REJECT
+DOMAIN-SUFFIX,h.trace.qq.com,REJECT
+DOMAIN-SUFFIX,l.qq.com,REJECT
+DOMAIN-SUFFIX,mazu.m.qq.com,REJECT
+DOMAIN-SUFFIX,oth.eve.mdt.qq.com,REJECT
+DOMAIN-SUFFIX,oth.str.mdt.qq.com,REJECT
+DOMAIN-SUFFIX,rqd.qq.com,REJECT
+DOMAIN-SUFFIX,snowflake.qq.com,REJECT
+DOMAIN,api-adservices.apple.com,REJECT
